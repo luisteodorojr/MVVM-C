@@ -1,1 +1,1 @@
-# MVVM-C
+# MVVM-C (MVVM + Coordinator)
