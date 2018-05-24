@@ -11,8 +11,13 @@ import UIKit
 class HomeViewModel {
     
     var homeModel: HomeModel?
-    
+    var changeController = Observable(HomeRoute.login)
+
     init(with model: HomeModel) {
         self.homeModel = model
+    }
+    
+    func changeViewLogin()  {
+        changeController.value = HomeRoute.login
     }
 }

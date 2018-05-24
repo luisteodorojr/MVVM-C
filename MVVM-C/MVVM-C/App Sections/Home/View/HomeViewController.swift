@@ -28,4 +28,8 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func home(_ sender: Any) {
+        viewModel.changeViewLogin()
+    }
 }

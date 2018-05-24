@@ -19,7 +19,28 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sM-ic-Hwf">
+                    <rect key="frame" x="32" y="467" width="311" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="d0t-2f-viD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Home">
+                        <color key="titleColor" red="0.36078431370000003" green="0.73725490199999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="home:" destination="-1" eventType="touchUpInside" id="SVv-Yl-asH"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4sM-ic-Hwf" secondAttribute="trailing" constant="32" id="RGt-1H-fUi"/>
+                <constraint firstItem="4sM-ic-Hwf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="a0h-PJ-m00"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4sM-ic-Hwf" secondAttribute="bottom" constant="150" id="lXP-Fc-ZJx"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
